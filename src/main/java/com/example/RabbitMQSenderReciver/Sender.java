@@ -16,7 +16,7 @@ public class Sender {
 
     @Scheduled(fixedDelay = 1000, initialDelay = 500)
     public void send() {
-        String message = "Hello World!";
+        String message = "My New Message to Queu!";
         this.template.convertAndSend(queue.getName(), message);
         System.out.println(" [x] Sent '" + message + "'");
     }
