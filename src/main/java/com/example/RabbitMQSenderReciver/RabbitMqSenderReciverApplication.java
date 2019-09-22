@@ -24,7 +24,7 @@ public class RabbitMqSenderReciverApplication {
 	@Profile("!usage_message")
 	@Bean
 	public CommandLineRunner tutorial() {
-		return new RabbitAmqpTutorialsRunner();
+		return new RabbitAmqpRunner();
 	}
 
 
